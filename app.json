@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "كودي - تعلم بايثون",
+    "slug": "kodi-arabic-tutor",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "scheme": "kodi",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#c2410c"
+    },
+    "ios": {
+      "bundleIdentifier": "com.kodi.arabictutor",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "كودي محتاج يسمعك عشان يتعلم معاك!",
+        "NSMicrophoneUsageDescription": "كودي محتاج المايك عشان تتكلم معاه!"
+      }
+    },
+    "android": {
+      "package": "com.kodi.arabictutor",
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/icon.png"
+    },
+    "experiments": {
+      "baseUrl": "/kodi-app"
+    }
+  }
+}
